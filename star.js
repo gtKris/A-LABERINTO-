@@ -29,19 +29,20 @@
     }
 
     document.addEventListener("keydown", (e) => {
-      if (!startCell && e.key === "s") {
+      const key = e.key.toLowerCase();
+      if (!startCell && key === "s") {
         startCell = document.querySelector(".cell:hover");
         if (startCell) {
           startCell.classList.add("start");
         }
-      } else if (!endCell && e.key === "f") {
+      } else if (!endCell && key === "f") {
         endCell = document.querySelector(".cell:hover");
         if (endCell) {
           endCell.classList.add("end");
         }
       }
     });
-
+    
   
     function findPath() {
       if (!startCell || !endCell) {
