@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+  <ul>
+    <li>Seleccione una celda de inicio presionando la tecla <strong>S</strong>.</li>
+    <li>Seleccione una celda de destino presionando la tecla <strong>F</strong>.</li>
+    <li>Para marcar una celda como obstáculo, haga clic sobre ella , saldrá en color negro.</li>
+    <li>Una vez seleccionado el inicio y el destino, haga clic en el botón <br>"Encontrar el camino más corto".</li>
+  </ul>
+  <div class="grid" id="grid"></div>
+  <script src="star.js"></script>
+  <button onclick="findPath()" class="solution-button ">Encontrar el camino más corto</button>
+</body>
+</html>

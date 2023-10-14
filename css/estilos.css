@@ -1,0 +1,71 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    border: 5px solid black;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #E5E5E5;
+    background: url('../image/font.jpg') center center fixed;
+    background-size: cover;
+  }
+
+   .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5); /* Ajusta la opacidad (0.5 para un 50% de opacidad) */
+    }
+
+
+  .cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgray;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .solution-button {
+    background-color: #34404b;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: -320px;
+    margin-top: 420px;
+    background-image: linear-gradient(45deg, transparent 40%, #000 50%, transparent 60%);
+    background-size: 100% 100%;
+    background-position: 0 0;
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase;
+  }
+
+  .start {
+    background-color: lightgreen;
+  }
+
+  .end {
+    background-color: lightcoral;
+  }
+
+  .wall {
+    background-color: black;
+  }
+
+  .path {
+    background-color: lightblue;
+  }
